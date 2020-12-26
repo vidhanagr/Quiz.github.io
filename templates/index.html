@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Welcome to Website</title>
+        
+        <style>
+        
+        body{
+            background-image:url('/static/image8.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+            
+    
+        #loginbutton { 
+        border: 1px solid black;
+        padding: 3px;
+        background-color: cyan;
+        font-family: Courier;
+        font-size: 20px;
+        }
+        #loginbutton:hover { 
+        border: 1px solid black;
+        padding: 3px;
+        background-color:blue;
+        font-family: Courier;
+        font-size: 20px;
+        color: white
+        }
+        .slider{
+            width:800px;
+            height:400px;
+            background:url("http://localhost/static/v.jpg");
+            margin:100px auto;
+            animation:slide 20s infinite;
+        }
+        @keyframes slide{
+            25%{
+             background:url("http://localhost/static/i.jpg");   
+            }
+            50%{
+             background:url("http://localhost/static/d.jpg");   
+            }
+            75%{
+             background:url("http://localhost/static/h.jpg");   
+            }
+            100%{
+             background:url("http://localhost/static/a.jpg");   
+            }
+            125%{
+             background:url("http://localhost/static/n.jpg");   
+            }
+        }
+        </style>
+        </head>
+        <body>
+            <br>
+            <h1 align="center"><p style="color:white">Hi,Welcome to my website<br>Click here to login to play Quiz</br></p></h1>
+            <form align="center" action="http://127.0.0.1/login" method="GET">
+                <input id="loginbutton" type="submit" value="LOGIN">
+            </form>
+            <div class= "slider">
+            </div>
+    </body>
+</html>

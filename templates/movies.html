@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Movie Website</title>
+
+        <style>
+            body{
+            background-image:url('/static/image10.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+            #logoutbutton { 
+                border: 1px solid black;
+                padding: 3px;
+                background-color: cyan;
+                font-family: Courier;
+                font-size: 50px;
+            }
+            #logoutbutton:hover { 
+                border: 1px solid black;
+                padding: 3px;
+                background-color:blue;
+                font-family: Courier;
+                font-size: 50px;
+                color: white
+            }
+            h1{
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 90px;
+            }
+            .slider{
+            width:800px;
+            height:400px;
+            background:url("http://localhost/static/v.jpg");
+            margin:100px auto;
+            animation:slide 20s infinite;
+        }
+        @keyframes slide{
+            25%{
+             background:url("http://localhost/static/i.jpg");   
+            }
+            50%{
+             background:url("http://localhost/static/d.jpg");   
+            }
+            75%{
+             background:url("http://localhost/static/h.jpg");   
+            }
+            100%{
+             background:url("http://localhost/static/a.jpg");   
+            }
+            125%{
+             background:url("http://localhost/static/n.jpg");   
+            }
+        }
+
+        </style>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScLRfDIcg21Qg42HOsNReaXXtslUU4fTKq33sBqBJsiZh6lgw/viewform?usp=pp_url"><h1>Quiz Competition</h1></a>
+        <form align="center" action="http://127.0.0.1/logout" method="GET">
+            <input id="logoutbutton" type="submit" value="LOGOUT">
+            <div class= "slider">
+            </div>
+         </form>
+        
+    </body>
+</html>
